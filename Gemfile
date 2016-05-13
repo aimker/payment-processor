@@ -29,6 +29,9 @@ gem 'stripe'
 # Figaro gem for securely managing credentials
 gem 'figaro'
 
+# Add letter opener to handle e-mails in development
+gem 'letter_opener', group: :development
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
