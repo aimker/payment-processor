@@ -6,14 +6,14 @@
       <p><strong>RECEIPT</strong></p>
       <div id="receipt-details" class="row clearfix">
         <div class="col-sm-8 receipt-left">
-          <p><strong class="font-weight-heavy">Growth Hacking</strong><br/> <span class="font-weight-light">Crash Course</span></p>
+          <p><strong class="font-weight-heavy"><%= @product.title %></strong><br/> <span class="font-weight-light">Crash Course</span></p>
         </div>
         <div class="col-sm-4">
           $4.99
         </div>
       </div>
 
-      <%= link_to "https://s3.amazonaws.com/aimker-payment-processor/Appwirelogo.jpg" do %>
+      <%= link_to "<%= product.download_url" do %>
         <button type="button" class="btn btn-success btn-xs">DOWNLOAD</button>
       <% end %>
 

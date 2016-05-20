@@ -1,5 +1,5 @@
 <p>Thanks for buying!</p>
 
-<%= link_to "https://s3.amazonaws.com/aimker-payment-processor/Appwirelogo.jpg" do %>
+<%= link_to "<%= @product.download_url %>" do %>
   <button type="button" class="btn btn-success btn-xs">DOWNLOAD</button>
 <% end %>
