@@ -1,3 +1,7 @@
+<% content_for :head do %>
+  <%= image_tag(@product.header_image_name, alt: "Learn #{@product.title}", id: "content-header-img") %>
+<% end %>
+
 <section id="content-receipt" class="clearfix">
   <div id="receipt-container">
     <div class="dotmatrix left"></div>
