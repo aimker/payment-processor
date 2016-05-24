@@ -8,7 +8,7 @@ class ChargesController < ApplicationController
     customer = Stripe::Customer.create(
       :email => params[:stripeEmail],
       :source  => params[:stripeToken],
-      :plan => "GROHACK2"
+      :plan => "GROHACK2" # It remains hardcoded, need to create plans for all products.
     )
 
     # charge = Stripe::Charge.create(
